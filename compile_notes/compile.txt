@@ -1,0 +1,6 @@
+compile the files
+g++ -c ./src/main.cpp -o ./bin/main.o
+g++ -c ./src/help.cpp -o ./bin/help.o
+
+link the object files
+g++ ./bin/main.o ./bin/help.o -o ./bin/program
