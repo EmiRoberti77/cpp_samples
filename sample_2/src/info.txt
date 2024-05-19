@@ -1,0 +1,37 @@
+This code demonstrates:
+
+    Value initialization: Initializing a variable to its default value.
+    Direct initialization: Initializing a variable with specific values using parentheses.
+    Copy initialization: Initializing a variable by copying the value of another variable.
+    Custom class examples: Demonstrates the same initialization methods with a custom class.
+
+#include <iostream>
+
+class MyClass {
+public:
+    int value;
+
+    // Constructor for demonstration
+    MyClass(int val) : value(val) {}
+};
+
+int main() {
+    // Value initialization
+    int valueInit = int();  // Initializes to default value (0 for int)
+    std::cout << "Value initialization: " << valueInit << std::endl;
+
+    // Direct initialization
+    int directInit(42);  // Initializes to specific value
+    std::cout << "Direct initialization: " << directInit << std::endl;
+
+    // Copy initialization
+    int copyInit = 100;  // Initializes via copy
+    std::cout << "Copy initialization: " << copyInit << std::endl;
+
+    // Custom class examples
+    MyClass objValueInit = MyClass();  // Value initialization of custom class
+    MyClass objDirectInit(5);         // Direct initialization of custom class
+    MyClass objCopyInit = objDirectInit;  // Copy initialization of custom class
+
+    return 0;
+}
